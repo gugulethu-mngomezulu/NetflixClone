@@ -1,0 +1,129 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e50914;
+  }
+  
+  header nav a {
+    margin: 0 15px;
+  }
+  
+  .signin-btn {
+    padding: 8px 20px;
+    background-color: #e50914;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #hero {
+    height: 70vh;
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-content input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .hero-content button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #movies {
+    padding: 20px 50px;
+  }
+  
+  #movies h2 {
+    margin-bottom: 20px;
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .movie-card {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 32px;
+    }
+  
+    .hero-content input {
+      width: 200px;
+    }
+  
+    .movie-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
